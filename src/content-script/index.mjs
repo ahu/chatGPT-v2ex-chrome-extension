@@ -7,7 +7,10 @@ async function run(question) {
 
   const siderbarContainer = document.getElementById("Rightbar");
   if (siderbarContainer) {
+    const container2 = document.createElement("div");
+    container2.className = "sep20";
     siderbarContainer.prepend(container);
+    siderbarContainer.prepend(container2);
   }
 
   const port = Browser.runtime.connect();

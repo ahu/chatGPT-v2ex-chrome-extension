@@ -19,7 +19,7 @@ async function run(question) {
       container.innerHTML =
         '<p class="cell">Please login at <a href="https://chat.openai.com" target="_blank">chat.openai.com</a> first</p>';
     } else {
-      container.innerHTML = "<p class="cell">Failed to load response from ChatGPT</p>";
+      container.innerHTML = '<p class="cell">Failed to load response from ChatGPT</p>';
     }
   });
   port.postMessage({ question });
